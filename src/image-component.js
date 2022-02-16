@@ -1,4 +1,4 @@
-import image from './image.png';
+import image from './Magicthegathering-logo.svg.png';
 
 const img = document.createElement('img');
 img.src = image;
