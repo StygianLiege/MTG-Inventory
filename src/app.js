@@ -7,6 +7,7 @@
 //document.body.appendChild(component());
 */
 import React, { Component } from 'react';
+import Collection from './component';
 
 /// building react app
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
       <div className="App">
         <img src={'./Magicthegathering-logo.svg.png'} />
         <h1>gathering...</h1>
+        <Collection />
       </div>
     );
   }
