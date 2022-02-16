@@ -16,7 +16,7 @@ const CollectionBody = (props) => {
       <tr key={index}>
         <td>{row.name}</td>
         <td>
-          <button onClick={() => props.removeCharacter(index)}>Delete</button>
+          <button onClick={() => props.removeCard(index)}>Delete</button>
         </td>
       </tr>
     );

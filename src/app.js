@@ -8,18 +8,18 @@
 */
 import React, { Component } from 'react';
 import Collection from './component';
+import Form from './form';
 
 /// building react app
 class App extends Component {
   state = {
-    cards: [
-      {
+    cards: [],
+    /*{
         name: 'Swamp',
       },
       {
         name: 'Island',
-      },
-    ],
+      },*/
   };
 
   removeCard = (index) => {
@@ -31,13 +31,18 @@ class App extends Component {
     });
   };
 
+  handleSubmit = (card) => {
+    this.setState({ cards: [...this.state.cards, card] });
+  };
+
   render() {
     const { cards } = this.state;
     return (
       <div className="App">
         <img src={'./Magicthegathering-logo.svg.png'} />
-        <h1>gathering...</h1>
+        <h1>The gathered...</h1>
         <Collection cardCollection={cards} removeCard={this.removeCard} />
+        <Form handleSubmit={this.handleSubmit} />
       </div>
     );
   }
