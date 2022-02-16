@@ -9,8 +9,22 @@ const PORT = 3000;
 const app = express();
 
 /*
-const mongoURI = // insert URI here //
+// db setup //
 */
+
+mongoose.connect(
+  'mongodb+srv://StygianLiege:pAXYECCSQ8bbKqHr@cluster0.k20i5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+  //   {
+  //     useNewUrlParser: true,
+  //     useFindAndModify: false,
+  //     useUnifiedTopology: true,
+  //   }
+);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error: '));
+db.once('open', function () {
+  console.log('Connected successfully');
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

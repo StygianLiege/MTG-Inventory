@@ -35,7 +35,7 @@ cardController.addCard = (req, res, next) => {
 
 // delete card from DB
 cardController.deleteCard = (req, res, next) => {
-  Card.deleteMany(
+  Card.findOneAndDelete(
     {
       /* finish this */
     },
