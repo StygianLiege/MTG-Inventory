@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
 
@@ -7,6 +8,7 @@ const cardController = require('./controllers/cardController');
 const PORT = /*8080*/ 3000;
 
 const app = express();
+app.use(cors());
 
 /*
 // db setup //
@@ -30,15 +32,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // routes
-app.get('/', cardController.getAllCards, (req, res) =>
+app.get('/api', cardController.getAllCards, (req, res) =>
   res.status(200).json(res.locals.cards)
 );
 
-app.post('/', cardController.addCard, (req, res) =>
+app.post('/api', cardController.addCard, (req, res) =>
   res.status(200).json(res.locals.card)
 );
 
-app.delete('/', cardController.deleteCard, (req, res) =>
+app.delete('/api', cardController.deleteCard, (req, res) =>
   res.status(200).json(res.locals.card)
 );
 

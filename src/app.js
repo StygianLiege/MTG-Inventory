@@ -9,6 +9,7 @@
 import React, { Component } from 'react';
 import Collection from './component';
 import Form from './form';
+const axios = require('axios');
 
 /// building react app
 class App extends Component {
@@ -21,6 +22,22 @@ class App extends Component {
         name: 'Island',
       },*/
   };
+  // perform fetch request to retrieve data
+  componentDidMount() {
+    axios
+      .get('http://localhost:3000/api')
+      .then((response) => {
+        for (let i = 0; i < response.data.length; i++) {
+          console.log(response.data[i]);
+          const card = response.data[i];
+          this.setState({ cards: [...this.state.cards, card] });
+        }
+        console.log('axios:', response.data);
+      })
+      .catch((err) => {
+        console.log('axios:', err);
+      });
+  }
 
   removeCard = (index) => {
     const { cards } = this.state;

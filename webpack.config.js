@@ -18,6 +18,10 @@ module.exports = {
       directory: path.join(__dirname, 'src'),
     },
     hot: 'only',
+    headers: { 'Access-Control-Allow-Origin': '*' },
+    proxy: {
+      '/api': 'http://localhost:3000',
+    },
   },
   module: {
     rules: [

@@ -12,6 +12,7 @@ cardController.getAllCards = (req, res, next) => {
   Card.find({}, (err, cards) => {
     if (err) return next(err /* finish this */);
     else {
+      console.log('cardController', cards);
       res.locals.cards = cards;
       return next();
     }
