@@ -1,4 +1,4 @@
-#MTG Inventory
+# MTG Inventory
 
 I play Magic the Gathering. This means I have hundreds of Magic the Gathering cards. How do I keep track of all these cards? This scratch project is an attempt to address this issue.
 
