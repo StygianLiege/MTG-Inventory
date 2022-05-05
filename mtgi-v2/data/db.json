@@ -1,0 +1,100 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "cardName": "Imperial Seal",
+      "cardType": "Sorcery",
+      "cardManaCost": "1",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/6/0/6023bfe0-84bf-454c-b29d-5d128fe3e6b5.jpg?1562869020"
+    },
+    {
+      "cardName": "Doom Blade",
+      "cardType": "Instant",
+      "cardManaCost": "2",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/png/front/6/e/6e19acff-f3dd-417a-a9ab-ea3e36c1ba61.png?1561983934",
+      "id": 3
+    },
+    {
+      "cardName": "Phyrexian Altar",
+      "cardType": "Artifact",
+      "cardManaCost": "3",
+      "cardColorIdentity": "Colorless",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/png/front/3/c/3c66c54b-b2d1-494d-ae10-a950c184a52f.png?1547518505",
+      "id": 4
+    },
+    {
+      "cardName": "Rot Hulk",
+      "cardType": "Creature - Zombie",
+      "cardManaCost": "7",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/c/e/ce9cf26d-f214-4e76-b000-8dd895cce8d9.jpg?1592764595",
+      "id": 5
+    },
+    {
+      "cardName": "Diregraf Captain",
+      "cardType": "Creature - Zombie Soldier",
+      "cardManaCost": "3",
+      "cardColorIdentity": "Blue/Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/0/e/0e5f41eb-609b-4882-af9e-904daa717484.jpg?1562898304",
+      "id": 6
+    },
+    {
+      "cardName": "Carrion Feeder",
+      "cardType": "Creature - Zombie",
+      "cardManaCost": "1",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/d/3/d3e33835-a293-4a1f-85d5-8ac22360ef35.jpg?1580014206",
+      "id": 7
+    },
+    {
+      "cardName": "Counterspell",
+      "cardType": "Instant",
+      "cardManaCost": "2",
+      "cardColorIdentity": "Blue",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/c/c/cca8eb95-d071-46a4-885c-3da25b401806.jpg?1562441143",
+      "id": 8
+    },
+    {
+      "cardName": "Rhystic Study",
+      "cardType": "Enchantment",
+      "cardManaCost": "3",
+      "cardColorIdentity": "Blue",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/3/3/3394cefd-a3c6-4917-8f46-234e441ecfb6.jpg?1592487887",
+      "id": 9
+    },
+    {
+      "cardName": "Reassembling Skeleton",
+      "cardType": "Creature - Skeleton Warrior",
+      "cardManaCost": "2",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/a/3/a3d4ac21-2203-45f4-b5f2-dc186ccdbe69.jpg?1562303448",
+      "id": 10
+    },
+    {
+      "cardName": "Sol Ring",
+      "cardType": "Artifact",
+      "cardManaCost": "1",
+      "cardColorIdentity": "Colorless",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/c/6/c6399a22-cebf-4c1d-a23e-4c68f784ac1b.jpg?1562623085",
+      "id": 11
+    },
+    {
+      "cardName": "Damnation",
+      "cardType": "Sorcery",
+      "cardManaCost": "4",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/7/f/7fc1d7db-11a3-4ff9-8d27-1fe401053080.jpg?1615223046",
+      "id": 12
+    },
+    {
+      "cardName": "The Meathook Massacre",
+      "cardType": "Legendary Enchantment",
+      "cardManaCost": "2",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/0/8/08950015-eee5-4327-888c-82dfd13bb9ad.jpg?1634350016",
+      "id": 13
+    }
+  ]
+}

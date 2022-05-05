@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+/* FROM App.css  */
+.App {
+  text-align: center;
+  background-color: #252525;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-logo {
+  height: 12vw;
+  width: 12vw;
+  margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
+  margin-left: 1.5vw;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 5px aliceblue);
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-content {
+  background-color: #252525;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* ^^ FROM App.css ^^ */
+
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  color: aliceblue;
+  user-select: none;
+  text-shadow: 0px 0px 3px aliceblue;
+  text-decoration: none;
+}
+button {
+  background-color: #252525;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 3px aliceblue;
+}
+a:hover {
+  color: #252525;
+  box-shadow: 0px 0px 4px aliceblue;
+  background-color: aliceblue;
+}
+
+.landing-cards-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+/* navbar */
+.navbar {
+  position: fixed;
+  float: left;
+  width: 15vw;
+  height: 100vw;
+  border-right: solid 1px;
+  box-shadow: 0px 0px 4px aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-button {
+  margin-left: 2.5vw;
+  margin-right: 1.5vw;
+  margin-top: 1.5vw;
+  width: 10vw;
+}
+.navbar-button:hover {
+  background-color: aliceblue;
+  color: #252525;
+  box-shadow: 0px 0px 4px aliceblue;
+  cursor: pointer;
+}
+
+/* Card list */
+.card-list {
+  /*flex-direction: column; */
+  /* width: 100%; */
+  margin-top: 2em;
+  width: 20vw;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.card-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30vw;
+}
+
+/* Card Viewer */
+.card-viewer {
+  margin-top: 10vw;
+  margin-left: 60vw;
+  position: fixed;
+}
+.card-viewer img {
+  border-radius: 20px;
+  height: 600px;
+  box-shadow: 0px 0px 8px aliceblue;
+}
+
+/* Individual Card */
+.card-data {
+  width: 100%;
+  margin: auto;
+}
+.card-data-name {
+  width: max-content;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.card-data-name:hover {
+  box-shadow: 0px 0px 4px aliceblue;
+  background-color: aliceblue;
+  color: #252525;
+}
+/* .card-popup {
+  width: 200px;
+  z-index: 2;
+} */
+
+/* Card Modal */
+.card-modal {
+  /* position: relative;
+  opacity: 100%;
+  z-index: 3; */
+  margin-top: 14vw;
+  margin-left: 30vw;
+  width: 20vw;
+  /* width: 40%;
+  margin: auto; */
+}
+.card-modal-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* margin-left: 34vw; */
+}
+.card-modal-text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.card-modal-text p {
+  font-size: 20px;
+}
+.card-modal-label {
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-bottom: 0;
+}
+.card-modal-data {
+  margin-top: 0;
+}
+.card-modal-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-modal-button {
+  font-size: medium;
+  width: 4vw;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  border: solid 1px;
+  border-color: aliceblue;
+  box-shadow: 0px 0px 4px aliceblue;
+}
+.card-modal-button:hover {
+  background-color: aliceblue;
+  color: #252525;
+  box-shadow: 0px 0px 4px aliceblue;
+  cursor: pointer;
+}
+
+/* Card Form */
+.new-card {
+  margin-left: 40vw;
+  margin-top: 25vh;
+  width: 40vw;
+}
+.new-card-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-card-text {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+
+.new-card-text input {
+  margin-bottom: 1vw;
+  box-shadow: 0px 0px 4px aliceblue;
+  border: none;
+}
+
+.new-card-text input:hover {
+  box-shadow: 0px 0px 8px aliceblue;
+}
+
+.new-card-text input:focus {
+  /* textarea:focus,
+select:focus { */
+  outline: none;
+  box-shadow: 0px 0px 8px aliceblue;
+}
+.new-card-mana-identity {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  align-items: center;
+  font-size: medium;
+}
+.new-card-mana-identity-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5vw;
+}
+
+.new-card-button {
+  font-size: medium;
+  width: 4vw;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  border: solid 1px;
+  border-color: aliceblue;
+  box-shadow: 0px 0px 4px aliceblue;
+  margin: auto;
+  margin-top: 2vw !important;
+}
+
+.new-card-button:hover {
+  background-color: aliceblue;
+  color: #252525;
+  box-shadow: 0px 0px 4px aliceblue;
+  cursor: pointer;
+}
+
+input[type='text'],
+input[type='number'] {
+  color: #252525;
+  text-align: center;
+}
+
+/* Card Form checkboxes */
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-color: aliceblue;
+  transition: box-shadow 0.3s;
+  background: #252525;
+  cursor: pointer;
+  border: 1px solid;
+  appearance: none;
+  -webkit-appearance: none;
+  filter: drop-shadow(0px 0px 5px aliceblue);
+}
+input[type='checkbox']:checked {
+  box-shadow: inset 0 0 0 20px aliceblue;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  opacity: 1;
+}
