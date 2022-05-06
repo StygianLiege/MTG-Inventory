@@ -14,13 +14,9 @@ Next, run `npm install` to download the necessary dependencies.
 
 MTG Inventory is ready to go!
 
-To boot up the local server/database, run:
+To boot up the local server/database, run `npx json-server --watch data/db.json --port 8000`
 
-### `npx json-server --watch data/db.json --port 8000`
-
-Now open a second terminal and start up the interface with:
-
-### `npm start`
+Now open a second terminal and start up the interface with `npm start`
 
 The application will be found at `http://localhost:3000/`.
 
