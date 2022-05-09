@@ -73,14 +73,6 @@
       "id": 10
     },
     {
-      "cardName": "Sol Ring",
-      "cardType": "Artifact",
-      "cardManaCost": "1",
-      "cardColorIdentity": "Colorless",
-      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/c/6/c6399a22-cebf-4c1d-a23e-4c68f784ac1b.jpg?1562623085",
-      "id": 11
-    },
-    {
       "cardName": "Damnation",
       "cardType": "Sorcery",
       "cardManaCost": "4",
