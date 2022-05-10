@@ -87,6 +87,38 @@
       "cardColorIdentity": "Black",
       "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/0/8/08950015-eee5-4327-888c-82dfd13bb9ad.jpg?1634350016",
       "id": 13
+    },
+    {
+      "cardName": "Gravecrawler",
+      "cardType": "Creature - Zombie",
+      "cardManaCost": "1",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/4/8/48d73cb5-22ac-43df-9c4b-0c860bb80b3e.jpg?1562912038",
+      "id": 14
+    },
+    {
+      "cardName": "Wilhelt, The Rotcleaver",
+      "cardType": "Legendary Creature - Zombie Warrior",
+      "cardManaCost": "4",
+      "cardColorIdentity": "Blue/Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/png/front/2/5/2501a911-d072-436d-ae3b-a5164e3b30aa.png?1637627743",
+      "id": 15
+    },
+    {
+      "cardName": "Lord of the Undead",
+      "cardType": "Creature - Zombie",
+      "cardManaCost": "3",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/7/9/792e773b-5feb-407f-a162-f35d6e693cca.jpg?1562550141",
+      "id": 16
+    },
+    {
+      "cardName": "Midnight Reaper",
+      "cardType": "Creature - Zombie Knight",
+      "cardManaCost": "3",
+      "cardColorIdentity": "Black",
+      "cardUrl": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/e/5e122fe0-51c5-404d-a7b9-3d161a426c35.jpg?1572892997",
+      "id": 17
     }
   ]
 }
