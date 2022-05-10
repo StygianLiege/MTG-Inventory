@@ -117,7 +117,7 @@ const Sort = () => {
           });
         }}
       />
-      <label>Color Identity:</label>
+      <label className="sort-color">Color Identity:</label>
       <label>Colorless</label>
       <input
         type="checkbox"
