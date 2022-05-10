@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-//import logo from '../logo512.png';
+import Sort from './Sort';
 import CardList from './CardList';
 import CardForm from './CardForm';
 import CardModal from './CardModal';
@@ -15,22 +15,23 @@ const Landing = () => {
   const [curCard, setCurCard] = useState(null);
   // watches for update to json server, increments by one for dependency array
   const [update, setUpdate] = useState(0);
+  // sets default card viewer image
+  const [cardUrl, setCardUrl] = useState(
+    'https://c1.scryfall.com/file/scryfall-card-backs/large/59/597b79b3-7d77-4261-871a-60dd17403388.jpg?1562636810'
+  );
+  // tracks current query string (defaults to all cards)
+  const [query, setQuery] = useState('http://localhost:8000/cards');
 
   // fetches cards from db.json and sets them to state
   useEffect(() => {
-    fetch('http://localhost:8000/cards')
+    fetch(query)
       .then((res) => {
         return res.json();
       })
       .then((data) => setCards(data))
       .catch((err) => alert(err.message));
-  }, [update]);
-  // clears edit status ??
+  }, [update, query]);
 
-  // sets default card viewer image
-  const [cardUrl, setCardUrl] = useState(
-    'https://c1.scryfall.com/file/scryfall-card-backs/large/59/597b79b3-7d77-4261-871a-60dd17403388.jpg?1562636810'
-  );
   // sets view for "card-viewer"
   const dispatchCardView = (dispatchedCardView) => {
     setCardUrl(dispatchedCardView);
@@ -72,9 +73,11 @@ const Landing = () => {
           update,
           dispatchUpdate,
           dispatchClearCardView,
+          setQuery,
         }}
       >
         <Navbar />
+        {cards && <Sort />}
         {cards && view === 0 && <CardList cards={cards} />}
         {!cards && view === 0 && <p>Loading...</p>}
         {view === 2 && <CardModal />}

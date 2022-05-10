@@ -1,4 +1,5 @@
 import Card from './Card';
+//import Sort from './Sort';
 
 const CardList = ({ cards }) => {
   return (

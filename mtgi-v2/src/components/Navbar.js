@@ -3,11 +3,8 @@ import logo from '../logo512.png';
 import { Context } from './Context';
 
 const Navbar = () => {
-  const { dispatchView, edit, dispatchEdit } = useContext(Context);
+  const { dispatchView } = useContext(Context);
   const handlePageView = (view) => {
-    if (edit) {
-      dispatchEdit();
-    }
     dispatchView(view);
   };
   return (

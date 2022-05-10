@@ -67,6 +67,9 @@ code {
   text-shadow: 0px 0px 3px aliceblue;
   text-decoration: none;
 }
+input {
+  font-family: 'Fira Code', monospace !important;
+}
 button {
   background-color: #252525;
 }
@@ -109,6 +112,38 @@ a:hover {
   color: #252525;
   box-shadow: 0px 0px 4px aliceblue;
   cursor: pointer;
+}
+
+/* Sort */
+.sort {
+  position: fixed;
+  margin-left: 16vw;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .sort-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.sort label {
+  font-size: small;
+  margin-top: 1vh;
+}
+.sort-category {
+  font-size: x-large !important;
+  margin-top: 2vh !important;
+}
+.sort-search {
+  margin-top: 1vh;
+  box-shadow: 0px 0px 4px aliceblue;
+  border: none;
+}
+.sort-search:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 8px aliceblue !important;
 }
 
 /* Card list */
