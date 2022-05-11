@@ -103,7 +103,7 @@ const CardForm = () => {
             />
           </div>
           <div className="new-card-mana-identity">
-            <h3>Mana Identity:</h3>
+            <h3>Color Identity:</h3>
             <div className="new-card-mana-identity-div">
               <label>Colorless</label>
               <input

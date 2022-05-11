@@ -1,17 +1,20 @@
 import { useContext } from 'react';
-//import { Link } from 'react-router-dom';
 import { Context } from './Context';
-//import CardModal from './CardModal';
 
 const Card = ({ card, url }) => {
-  const { dispatchCard, dispatchCardView, dispatchView } = useContext(Context);
+  const { dispatchCard, dispatchCardView, dispatchView, setScroll } =
+    useContext(Context);
 
   const handleCardView = (url, card) => {
+    // readies CardModal for viewing
     dispatchCard(card);
     dispatchCardView(url);
   };
   const handleCardClick = () => {
+    // sets scroll position for return to CardList
+    setScroll(window.scrollY);
     setTimeout(() => {
+      // changes view to CardModal
       dispatchView(2);
     }, 10);
   };

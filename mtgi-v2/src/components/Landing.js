@@ -13,7 +13,7 @@ const Landing = () => {
   const [view, setView] = useState(0);
   // feeds card to context for CardModal
   const [curCard, setCurCard] = useState(null);
-  // watches for update to json server, increments by one for dependency array
+  // watches for update to json server, increments by one for useEffect dependency array
   const [update, setUpdate] = useState(0);
   // sets default card viewer image
   const [cardUrl, setCardUrl] = useState(
@@ -21,6 +21,8 @@ const Landing = () => {
   );
   // tracks current query string (defaults to all cards)
   const [query, setQuery] = useState('http://localhost:8000/cards');
+  // sets scroll position for CardList
+  const [scroll, setScroll] = useState(null);
 
   // fetches cards from db.json and sets them to state
   useEffect(() => {
@@ -74,6 +76,8 @@ const Landing = () => {
           dispatchUpdate,
           dispatchClearCardView,
           setQuery,
+          scroll,
+          setScroll,
         }}
       >
         <Navbar />
@@ -83,7 +87,14 @@ const Landing = () => {
         {view === 2 && <CardModal />}
         {view !== 1 && (
           <div className="card-viewer">
-            <img src={cardUrl} alt={'derp...'} />
+            <img
+              src={cardUrl}
+              alt={'derp...'}
+              onClick={() => {
+                if (view === 0) setScroll(window.scrollY);
+                view === 2 ? setView(0) : setView(2);
+              }}
+            />
           </div>
         )}
         {view === 1 && <CardForm />}

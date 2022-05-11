@@ -14,7 +14,7 @@ const Navbar = () => {
         Inventory
       </p>
       <p onClick={() => handlePageView(1)} className="navbar-button">
-        Add Card
+        New Card
       </p>
     </div>
   );

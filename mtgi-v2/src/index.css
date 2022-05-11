@@ -117,11 +117,22 @@ a:hover {
 /* Sort */
 .sort {
   position: fixed;
-  margin-left: 16vw;
-  margin-top: 20vh;
+  margin-left: 15vw;
+  margin-top: 17vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-right: solid 1px;
+  border-color: aliceblue;
+  padding: 1vw;
+  padding-bottom: 4vh !important;
+  box-shadow: 0px 0px 4px aliceblue inset;
+  /* padding-left: 2vw !important; */
+}
+.sort:hover {
+  box-shadow: 0px 0px 8px aliceblue inset;
 }
 /* .sort-form {
   display: flex;
@@ -163,7 +174,7 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 30vw;
+  margin-left: 33vw;
 }
 
 /* Card Viewer */
@@ -176,6 +187,9 @@ a:hover {
   border-radius: 20px;
   height: 600px;
   box-shadow: 0px 0px 8px aliceblue;
+}
+.card-viewer img:hover {
+  cursor: pointer;
 }
 
 /* Individual Card */
@@ -206,7 +220,7 @@ a:hover {
   opacity: 100%;
   z-index: 3; */
   margin-top: 14vw;
-  margin-left: 30vw;
+  margin-left: 33vw;
   width: 20vw;
   /* width: 40%;
   margin: auto; */
@@ -238,7 +252,7 @@ a:hover {
 }
 .card-modal-button {
   font-size: medium;
-  width: 4vw;
+  width: 5vw;
   /* padding-left: 8px;
   padding-right: 8px; */
   border: solid 1px;
@@ -296,12 +310,12 @@ select:focus { */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 5vw;
+  width: 7vw;
 }
 
 .new-card-button {
   font-size: medium;
-  width: 4vw;
+  width: 5vw;
   /* padding-left: 8px;
   padding-right: 8px; */
   border: solid 1px;
@@ -336,7 +350,7 @@ input[type='checkbox'] {
   border: 1px solid;
   appearance: none;
   -webkit-appearance: none;
-  filter: drop-shadow(0px 0px 5px aliceblue);
+  filter: drop-shadow(0px 0px 3px aliceblue);
 }
 input[type='checkbox']:checked {
   box-shadow: inset 0 0 0 20px aliceblue;
