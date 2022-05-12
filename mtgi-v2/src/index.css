@@ -179,13 +179,13 @@ a:hover {
 
 /* Card Viewer */
 .card-viewer {
-  margin-top: 10vw;
+  margin-top: 14vh;
   margin-left: 60vw;
   position: fixed;
 }
 .card-viewer img {
   border-radius: 20px;
-  height: 600px;
+  height: 700px;
   box-shadow: 0px 0px 8px aliceblue;
 }
 .card-viewer img:hover {

@@ -15,7 +15,7 @@ const Sort = () => {
     green: false,
   });
   // used at end of useEffect to alter 'query' state in <Landing />'s <CardList />
-  const { setQuery } = useContext(Context);
+  const { setQuery, setScroll } = useContext(Context);
 
   // generates a new 'query' in <Landing /> upon any value change via 'setQuery'
   useEffect(() => {
@@ -76,6 +76,7 @@ const Sort = () => {
         className="sort-search"
         value={sort.search}
         onChange={(e) => {
+          setScroll(null);
           setSort({
             ...sort,
             search: e.target.value,
@@ -96,6 +97,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.alphabetically}
         onChange={() => {
+          setScroll(null);
           setSort({
             ...sort,
             search: '',
@@ -109,6 +111,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.manaCost}
         onChange={() => {
+          setScroll(null);
           setSort({
             ...sort,
             search: '',
@@ -123,6 +126,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.colorless}
         onChange={() => {
+          setScroll(null);
           setSort({ ...sort, search: '', colorless: !sort.colorless });
         }}
       />
@@ -131,6 +135,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.white}
         onChange={() => {
+          setScroll(null);
           setSort({ ...sort, search: '', white: !sort.white });
         }}
       />
@@ -139,6 +144,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.blue}
         onChange={() => {
+          setScroll(null);
           setSort({ ...sort, search: '', blue: !sort.blue });
         }}
       />
@@ -147,6 +153,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.red}
         onChange={() => {
+          setScroll(null);
           setSort({ ...sort, search: '', red: !sort.red });
         }}
       />
@@ -155,6 +162,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.black}
         onChange={() => {
+          setScroll(null);
           setSort({ ...sort, search: '', black: !sort.black });
         }}
       />
@@ -163,6 +171,7 @@ const Sort = () => {
         type="checkbox"
         checked={sort.green}
         onChange={() => {
+          setScroll(null);
           setSort({ ...sort, search: '', green: !sort.green });
         }}
       />
