@@ -45,7 +45,7 @@ const Sort = () => {
     }
 
     let prevColor = false;
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i <= 5; i++) {
       if (sort.colorless && i === 0) {
         newQuery += 'Colorless';
         prevColor = true;
