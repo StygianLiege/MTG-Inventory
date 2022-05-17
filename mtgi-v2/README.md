@@ -30,7 +30,7 @@ To add new cards, click **New Card** and fill in the required information.
 
 When ready, hit **Submit**.
 
-Your new card will now be in the Invetory.
+Your new card will now be in the Inventory.
 
 Add more cards and watch your collection grow.
 
