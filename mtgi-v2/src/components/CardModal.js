@@ -28,7 +28,7 @@ const CardModal = () => {
           <p className="card-modal-data">{curCard.cardName}</p>
           <p className="card-modal-label">TYPE:</p>
           <p className="card-modal-data">{curCard.cardType}</p>
-          <p className="card-modal-label">MANA COST:</p>
+          <p className="card-modal-label">CONVERTED MANA COST:</p>
           <p className="card-modal-data">{curCard.cardManaCost}</p>
           <p className="card-modal-label">COLOR IDENTITY:</p>
           <p className="card-modal-data">{curCard.cardColorIdentity}</p>

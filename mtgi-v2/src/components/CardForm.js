@@ -72,21 +72,21 @@ const CardForm = () => {
       <form className="new-card-form">
         <div className="new-card-input-container">
           <div className="new-card-text">
-            <label>Card Name:</label>
+            <label>Name:</label>
             <input
               type="text"
               required
               value={cardName}
               onChange={(e) => setCardName(e.target.value)}
             />
-            <label>Card Type:</label>
+            <label>Type:</label>
             <input
               type="text"
               required
               value={cardType}
               onChange={(e) => setCardType(e.target.value)}
             />
-            <label>Mana Cost:</label>
+            <label>Converted Mana Cost:</label>
             <input
               type="number"
               required
